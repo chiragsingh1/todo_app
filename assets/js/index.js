@@ -1,1 +1,5 @@
-console.log('script loaded');
+$(function () {
+	$("#date-picker").datepicker({
+		dateFormat: 'dd-mm-yy'
+	});
+});
