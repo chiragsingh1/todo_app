@@ -5,6 +5,24 @@ module.exports.home = function(req,res){
         task_list: taskList
     });
 }
+
+module.exports.addNewTask = function(req,res){
+	// console.log(req.body);
+	taskList.push(req.body);
+	return res.redirect('/');
+}
+
+module.exports.delete = function(req,res){
+	let task = req.query.newTask;
+	
+	let taskIndex = taskList.findIndex(i => i.newTask == task);
+
+	if(taskIndex!=-1){
+		taskList.splice(taskIndex,1);
+	}
+	return res.redirect('back');
+}
+
 var taskList = [
 	{
 		newTask:"Get Job",
