@@ -1,7 +1,7 @@
-// rewuire the library
+// require the library
 const mongoose = require('mongoose');
 // connect to db
-mongoose.connect('mongodb://localhost/todo_app_db');
+mongoose.connect('mongodb://localhost/todo_list_db');
 //check if connected
 const db = mongoose.connection;
 //  if error
