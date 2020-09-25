@@ -53,13 +53,13 @@ module.exports.delete = function(req,res){
 
 // var taskList = [
 // 	{
-// 		newTask:"Get Job",
-// 		category:"Work",
+// 		newTask:"Wash Clothes",
+// 		category:"Personal",
 // 		dueDate: "03-03-2021"
 // 	},
 // 	{
-// 		newTask:"EECT TEST",
-// 		category:"Personal",
+// 		newTask:"Monday TEST",
+// 		category:"Work",
 // 		dueDate: "03-11-2020"
 // 	},
 // 	{
